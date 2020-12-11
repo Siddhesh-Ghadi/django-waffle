@@ -52,7 +52,7 @@ addons:
   postgresql: "9.6"
 
 before_script:
-  - sudo apt-get install -y gettext-base
+  - sudo apt-get install -y gettext-base gettext
   - psql -c 'create database waffle_test;' -U postgres
 
 env:
